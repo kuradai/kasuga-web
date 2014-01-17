@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -32,6 +33,10 @@ module.exports = function(grunt) {
           livereload: true,
         },
       },
+      copy: {
+        files: 'src/image/*',
+        tasks: ['copy']
+      },
     },
     haml: {
       compile: {
@@ -50,7 +55,7 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          "dst/javascripts/app.js": "src/coffee/app.coffee"
+          "dst/javascript/app.js": "src/coffee/app.coffee"
         }
       }
     },
@@ -59,23 +64,30 @@ module.exports = function(grunt) {
         options: {
         },
         files: {
-          "dst/stylesheets/style.css": "src/sass/style.sass"
+          "dst/stylesheet/style.css": "src/sass/style.sass"
         }
       }
     },
     cssmin: {
       combine: {
         files: {
-          'dst/stylesheets/bootstrap.css': ['src/style/bootstrap.css']
+          'dst/stylesheet/bootstrap.css': ['src/style/bootstrap.css']
         }
       }
     },
     uglify: {
       my_target: {
         files: {
-          'dst/javascripts/bootstrap.js': ['src/js/bootstrap.js'],
-          'dst/javascripts/jquery-2.0.3.js': ['src/js/jquery-2.0.3.js']
+          'dst/javascript/bootstrap.js': ['src/js/bootstrap.js'],
+          'dst/javascript/jquery-2.0.3.js': ['src/js/jquery-2.0.3.js']
         }
+      }
+    },
+    copy: {
+      main: {
+        files: [
+          {expand: true, src: ['**'], dest: 'dst/image', cwd: 'src/image'}
+        ]
       }
     },
     clean: {
@@ -83,6 +95,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['clean', 'haml', 'sass', 'cssmin', 'coffee', 'uglify'])
+  grunt.registerTask('default', ['clean', 'haml', 'sass', 'cssmin', 'coffee', 'uglify', 'copy'])
   
 };
