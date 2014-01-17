@@ -5,10 +5,10 @@
         %span.sr-only Toggle
         - 3.times do |i|
           %span.icon-bar
-      %a{:class => "navbar-brand", :href => "index.html"} 春日地区新入生歓迎委員会
+      %a{:class => "navbar-brand", :href => "index.html"} #{Haml::Engine.new(File.read('./src/haml/template/title.haml')).render}
 
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.navbar-right
-        - {schedule: "日程", event: "イベント", information: "資料", link: "リンク", contact: "お問い合わせ"}.each do |key, val|
+        - {aboutus: "クラ代について", activities: "局紹介", contact: "お問い合わせ", kurarennkai: "クラス連絡会について", opinions: "目安箱", pal: "PAL", schedule: "年間スケジュール"}.each do |key, val|
           %li
             %a{:href => "#{key}.html"} #{val}
