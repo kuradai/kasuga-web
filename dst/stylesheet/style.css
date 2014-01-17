@@ -1,3 +1,143 @@
+@charset "UTF-8";
 body {
-  margin: 24px 0;
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+  font-size: 13px;
+  background-image: url(../image/background.png);
+  background-repeat: no-repeat;
+  background-color: #555555;
+  text-align: left;
+  margin: 50px;
+  padding: 40px 10px 10px 20px;
+  color: #666666; }
+
+p {
+  margin-top: 5px 0 5px 0;
   padding: 0; }
+
+img {
+  border-style: none; }
+
+a {
+  color: #ff8800;
+  text-decoration: none; }
+
+div#title {
+  font-family: "DFKai-SB", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+  font-weight: bold;
+  font-size: 25px;
+  color: #666666; }
+
+div#footerarea {
+  color: #eeeeee;
+  width: 800px;
+  height: 30px;
+  padding: 20px;
+  border: 0px;
+  position: absolute;
+  top: 840px;
+  left: 100px;
+  background-color: #555555;
+  text-align: right; }
+
+div#menu {
+  width: 200px;
+  text-align: left;
+  position: absolute;
+  top: 200px;
+  left: 75px; }
+
+ul#sliding-navigation {
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+
+ul#sliding-navigation li.sliding-element a {
+  display: block;
+  width: 180px;
+  padding: 5px 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #777777;
+  background: #eeeeee url(../image/menubg.png) repeat-y;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-decoration: none; }
+
+ul#sliding-navigation li.sliding-element a:hover {
+  color: #555555;
+  background: #eeeeee url(../image/menubgh.png) repeat-y; }
+
+div#main {
+  width: 570px;
+  height: 560px;
+  padding: 20px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: white;
+  position: absolute;
+  top: 200px;
+  left: 330px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+div.titlebar {
+  color: #444444;
+  line-height: 1.5;
+  width: 550px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 10px;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffaec9;
+  background-color: #fff8ff;
+  background-image: url(../image/titleframe.png);
+  background-repeat: repeat-y;
+  border-style: solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+div.subtitlebar {
+  color: #444444;
+  line-height: 1.5;
+  width: 500px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 10px;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffaec9;
+  background-color: #fff8ff;
+  background-image: url(./image/titleframe.png);
+  background-repeat: repeat-y;
+  border-style: solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+div.text {
+  color: #484848;
+  width: 560px;
+  line-height: 1.8;
+  padding: 0px 5px 0px 5px;
+  background-color: #fff8ff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+div.overflowtext {
+  color: #484848;
+  width: 560px;
+  line-height: 1.8;
+  padding: 0px 5px 0px 5px;
+  background-color: #fff8ff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  overflow: scroll;
+  overflow-x: hidden; }

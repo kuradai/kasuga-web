@@ -6,7 +6,7 @@
     = Haml::Engine.new(File.read("./src/haml/template/head.haml")).render
 
   %body
-    = Haml::Engine.new(File.read("./src/haml/template/nav.haml")).render
+    / = Haml::Engine.new(File.read("./src/haml/template/nav.haml")).render
 
     #content.container
       = Haml::Engine.new(File.read("./src/haml/content/#{content_addr}.haml")).render
