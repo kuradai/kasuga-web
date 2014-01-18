@@ -17,6 +17,10 @@ a
   color: #ff8800
   text-decoration: none
 
+body, #header, #main, #footer
+  width: 100%
+  min-width: 1024px
+
 #header
   position: absolute
   top: 0
@@ -44,7 +48,7 @@ a
 
 #main
   position: absolute
-  top: 165px
+  top: 200px
   width: 100%
   min-height: 675px
   background-image: url(../image/logo.png)
@@ -65,112 +69,118 @@ a
     color: #eeeeee
     text-align: right
 
-#container
-  width: 800px
+.container
+  width: 1024px
   margin: 0 auto
   min-height: 0px
+  &:before,&:after
+    display: table
+    content: " "
+  &:after
+    clear: both
 
-  
-
-div#menu
-  width: 200px
-  text-align: left
-  position: absolute
-  top: 35px
-  left: 75px
-
-ul#sliding-navigation
+div#content
+  height: 560px
+  padding: 20px
+  background-color: #eeeeee
+  border: 1px solid #ffffff
+  border-radius: 5px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  .title
+    background-color: #fff8ff
+    display: block
+    padding: 10px
+    border-width: 0px 0px 1px 10px
+    border-color: #ffaec9
+    border-style: solid
+    border-radius: 3px
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    font-size: 16px
+    color: #444444
+    margin-bottom: 10px
+  .subtitle
+    color: #444444
+    line-height: 1.5
+    width: 500px
+    padding: 5px 5px 5px 15px
+    margin-bottom: 10px
+    border-width: 0px 0px 1px 0px
+    border-color: #ffaec9
+    background-color: #fff8ff
+    background-image: url(./image/titleframe.png)
+    background-repeat: repeat-y
+    border-style: solid
+    border-radius: 5px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+  .article
+    color: #444444
+    display: block
+    line-height: 1.8em
+    padding: 5px
+    background-color: #fff8ff
+    border-radius: 5px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    
+#menu ul
   list-style: none
   font-size: 14px
   margin: 0
   padding: 0
+  li a
+    display: block
+    width: 180px
+    padding: 5px 20px
+    margin: 0
+    margin-bottom: 5px
+    color: #777777
+    background: #eeeeee url(../image/menubg.png) repeat-y
+    border: 0
+    border-radius: 5px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    text-decoration: none
+    &:hover
+      color: #555555
+      background: #eeeeee url(../image/menubgh.png) repeat-y
 
-ul#sliding-navigation li.sliding-element a
-  display: block
-  width: 180px
-  padding: 5px 20px
-  margin: 0
-  margin-bottom: 5px
-  color: #777777
-  background: #eeeeee url(../image/menubg.png) repeat-y
-  border: 0
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  text-decoration: none
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 
+  float: left
 
-ul#sliding-navigation li.sliding-element a:hover
-  color: #555555
-  background: #eeeeee url(../image/menubgh.png) repeat-y
-
-div#content
-  width: 570px
-  height: 560px
-  padding: 20px
-  border-right: 1px
-  border-top: 1px
-  border-bottom: 1px
-  border-left: 1px
-  border-style: solid
-  border-color: #ffffff
-  position: absolute
-  top: 35px
-  left: 330px
-  background-color: #eeeeee
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-
-div.titlebar
-  color: #444444
-  line-height: 1.5
-  width: 550px
-  padding: 5px 5px 5px 15px
-  margin-bottom: 10px
-  border-width: 0px 0px 1px 0px
-  border-color: #ffaec9
-  background-color: #fff8ff
-  background-image: url(../image/titleframe.png)
-  background-repeat: repeat-y
-  border-style: solid
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-
-div.subtitlebar
-  color: #444444
-  line-height: 1.5
-  width: 500px
-  padding: 5px 5px 5px 15px
-  margin-bottom: 10px
-  border-width: 0px 0px 1px 0px
-  border-color: #ffaec9
-  background-color: #fff8ff
-  background-image: url(./image/titleframe.png)
-  background-repeat: repeat-y
-  border-style: solid
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-
-div.text
-  color: #484848
-  width: 560px
-  line-height: 1.8
-  padding: 0px 5px 0px 5px
-  background-color: #fff8ff
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-
-div.overflowtext
-  color: #484848
-  width: 560px
-  line-height: 1.8
-  padding: 0px 5px 0px 5px
-  background-color: #fff8ff
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  overflow: scroll
-  overflow-x: hidden
+.col-12
+  width: 100%
+.col-11
+  width: 91.66666666666666%
+.col-10
+  width: 83.33333333333334%
+.col-9
+  width: 75%
+.col-8
+  width: 66.66666666666666%
+.col-7
+  width: 58.333333333333336%
+.col-6
+  width: 50%
+.col-5
+  width: 41.66666666666667%
+.col-4
+  width: 33.33333333333333%
+.col-3
+  width: 25%
+.col-2
+  width: 16.666666666666664%
+.col-1
+  width: 8.333333333333332%

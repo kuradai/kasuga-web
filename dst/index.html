@@ -7,65 +7,56 @@
     <link href='image/favicon.ico' rel='shortcut icon'>
     <link href='image/apple-touch-icon.png' rel='apple-touch-icon'>
     <script src='javascript/jquery-2.0.3.js'></script>
-    <!-- %script{:src => "javascript/bootstrap.js"} -->
     <!-- %script{:src => "javascript/app.js"} -->
-    <!-- %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheet/bootstrap.css"} -->
     <link href='stylesheet/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!-- = Haml::Engine.new(File.read("./src/haml/template/nav.haml")).render -->
     <div id='header'>
       <div id='title'>筑波大学 春日地区クラス代表者会議</div>
     </div>
     <div id='main'>
-      <div id='menu'>
-        <nav>
-          <div id='ui-tab'>
-            <ul id='sliding-navigation'>
-              <li class='sliding-element'>
-                <a href='#fragment-0'>
-                  トップページ
-                </a>
-              </li>
-              <li class='sliding-element'>
-                <a href='#fragment-1'>
-                  クラ代ってなに？
-                </a>
-              </li>
-              <li class='sliding-element'>
-                <a href='#fragment-2'>
-                  局紹介
-                </a>
-              </li>
-              <li class='sliding-element'>
-                <a href='#fragment-3'>
-                  クラス連絡会ってなに？
-                </a>
-              </li>
-              <li class='sliding-element'>
-                <a href='#fragment-4'>
-                  施設紹介
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div id='content'>
-        <div class='titlebar'>
-          <span>春日地区クラス代表者会議のWebサイトへようこそ</span>
+      <div class='container'>
+        <div class='col-3' id='menu'>
+          <ul>
+            <li>
+              <a href='aboutus.html'>クラ代について</a>
+            </li>
+            <li>
+              <a href='activities.html'>局紹介</a>
+            </li>
+            <li>
+              <a href='contact.html'>お問い合わせ</a>
+            </li>
+            <li>
+              <a href='kurarennkai.html'>クラス連絡会について</a>
+            </li>
+            <li>
+              <a href='opinions.html'>目安箱</a>
+            </li>
+            <li>
+              <a href='pal.html'>PAL</a>
+            </li>
+            <li>
+              <a href='schedule.html'>年間スケジュール</a>
+            </li>
+          </ul>
         </div>
-        <div class='text'>
-          <p>
-            ここは筑波大学春日クラス代表者会議、通称「春日クラ代」のWebサイトです。
-            <br>
-            それぞれ活動内容の異なる「生活局」、「知識教育局」、「総務局」という3つの部局から成るクラス代表者会議に関する情報を掲載しています。
-          </p>
+        <div class='col-8' id='content'>
+          <div class='title'>
+            春日地区クラス代表者会議のWebサイトへようこそ
+          </div>
+          <div class='article'>
+            <p>
+              ここは筑波大学春日クラス代表者会議、通称「春日クラ代」のWebサイトです。
+              <br>
+              それぞれ活動内容の異なる「生活局」、「知識教育局」、「総務局」という3つの部局から成るクラス代表者会議に関する情報を掲載しています。
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div id='footer'>
-      <div id='container'>
+      <div class='container'>
         <p>copyright &copy 筑波大学 春日地区クラス代表者会議 All rights reserved.</p>
       </div>
     </div>
