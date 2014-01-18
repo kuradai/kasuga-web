@@ -1,29 +1,45 @@
+html,body,div
+  margin: 0
+  padding: 0
+
 body
   font-family: "メイリオ" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro"
   font-size: 13px
-  background-image: url(../image/background.png)
-  background-repeat: no-repeat
-  background-color: #555555
+  background-color: #ffffff
   text-align: left
-  margin: 50px
-  padding: 40px 10px 10px 20px
   color: #666666
-
 p
   margin-top: 5px 0 5px 0
   padding: 0
-
 img
   border-style: none
 a
   color: #ff8800
   text-decoration: none
 
-div#title
-  font-family: "DFKai-SB" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro"
-  font-weight: bold
-  font-size: 25px
-  color: #666666
+#header
+  position: absolute
+  width: 100%
+  height: 145px
+  background-image: url(../image/header.png)
+  background-repeat: no-repeat
+  background-color: #ffffff
+  &:after
+    position: absolute
+    content: ''
+    top: 145px
+    width: 100%
+    height: 20px
+    background-image: url(../image/header_bottom.png)
+    background-repeat: repeat-x
+    background-color: #ffffff
+  #title
+    padding: 50px
+    margin: 40px 0px 0px 20px
+    font-family: "DFKai-SB" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro"
+    font-weight: bold
+    font-size: 25px
+    color: #666666
 
 div#footerarea
   color: #eeeeee
