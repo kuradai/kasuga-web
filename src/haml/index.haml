@@ -1,5 +1,6 @@
-!!!
 - content_addr = "index"
+
+!!!
 %html
   %head
     %title #{Haml::Engine.new(File.read('./src/haml/template/title.haml')).render}
@@ -9,7 +10,6 @@
     / = Haml::Engine.new(File.read("./src/haml/template/nav.haml")).render
     = Haml::Engine.new(File.read("./src/haml/template/header.haml")).render
 
-    #content
-      = Haml::Engine.new(File.read("./src/haml/content/#{content_addr}.haml")).render
+    #main= Haml::Engine.new(File.read("./src/haml/content/#{content_addr}.haml")).render
       
     = Haml::Engine.new(File.read("./src/haml/template/foot.haml")).render

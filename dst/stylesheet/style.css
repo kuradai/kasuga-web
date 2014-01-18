@@ -46,6 +46,16 @@ a {
     font-size: 25px;
     color: #666666; }
 
+#main {
+  position: absolute;
+  top: 165px;
+  width: 100%;
+  min-height: 675px;
+  background-image: url(../image/logo.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-color: white; }
+
 #footer {
   position: absolute;
   top: 840px;
@@ -68,7 +78,7 @@ div#menu {
   width: 200px;
   text-align: left;
   position: absolute;
-  top: 200px;
+  top: 35px;
   left: 75px; }
 
 ul#sliding-navigation {
@@ -95,7 +105,7 @@ ul#sliding-navigation li.sliding-element a:hover {
   color: #555555;
   background: #eeeeee url(../image/menubgh.png) repeat-y; }
 
-div#main {
+div#content {
   width: 570px;
   height: 560px;
   padding: 20px;
@@ -106,7 +116,7 @@ div#main {
   border-style: solid;
   border-color: white;
   position: absolute;
-  top: 200px;
+  top: 35px;
   left: 330px;
   background-color: #eeeeee;
   border-radius: 5px;
