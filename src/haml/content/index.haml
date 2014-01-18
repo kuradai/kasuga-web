@@ -1,34 +1,28 @@
-#header
-  #title #{Haml::Engine.new(File.read('./src/haml/template/title.haml')).render}
-
-%aside
-  #menu
-    %nav
-      #ui-tab
-        %ul#sliding-navigation
-          %li.sliding-element
-            %a{:href => "#fragment-0"}
-              トップページ
-          %li.sliding-element
-            %a{:href => "#fragment-1"}
-              クラ代ってなに？
-          %li.sliding-element
-            %a{:href => "#fragment-2"}
-              局紹介
-          %li.sliding-element
-            %a{:href => "#fragment-3"}
-              クラス連絡会ってなに？
-          %li.sliding-element
-            %a{:href => "#fragment-4"}
-              施設紹介
+#menu
+  %nav
+    #ui-tab
+      %ul#sliding-navigation
+        %li.sliding-element
+          %a{:href => "#fragment-0"}
+            トップページ
+        %li.sliding-element
+          %a{:href => "#fragment-1"}
+            クラ代ってなに？
+        %li.sliding-element
+          %a{:href => "#fragment-2"}
+            局紹介
+        %li.sliding-element
+          %a{:href => "#fragment-3"}
+            クラス連絡会ってなに？
+        %li.sliding-element
+          %a{:href => "#fragment-4"}
+            施設紹介
 
 #main
-  #ui-tab
-    #fragment-0
-      .titlebar
-        %span 春日地区クラス代表者会議のWebサイトへようこそ
-      .text
-        %p
-          ここは筑波大学春日クラス代表者会議、通称「春日クラ代」のWebサイトです。
-          %br
-          それぞれ活動内容の異なる「生活局」、「知識教育局」、「総務局」という3つの部局から成るクラス代表者会議に関する情報を掲載しています。
+  .titlebar
+    %span 春日地区クラス代表者会議のWebサイトへようこそ
+  .text
+    %p
+      ここは筑波大学春日クラス代表者会議、通称「春日クラ代」のWebサイトです。
+      %br
+      それぞれ活動内容の異なる「生活局」、「知識教育局」、「総務局」という3つの部局から成るクラス代表者会議に関する情報を掲載しています。
