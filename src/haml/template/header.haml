@@ -1,2 +1,3 @@
 #header
-  #title #{Haml::Engine.new(File.read('./src/haml/template/title.haml')).render}
+  %a{:href => "index.html"}
+    #title #{Haml::Engine.new(File.read('./src/haml/template/title.haml')).render}
