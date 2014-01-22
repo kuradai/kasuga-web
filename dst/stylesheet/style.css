@@ -8,62 +8,48 @@ body {
   font-size: 13px;
   background-color: white;
   text-align: left;
-  color: #666666; }
+  color: #666666;
+  height: 100%; }
 
-p {
-  margin-top: 5px 0 5px 0;
-  padding: 0; }
-
-img {
-  border-style: none; }
-
-a {
-  color: #ff8800;
-  text-decoration: none; }
+body, #header {
+  position: absolute; }
 
 body, #header, #main, #footer {
+  background-color: white;
   width: 100%;
   min-width: 1024px; }
 
 #header {
-  position: absolute;
-  top: 0;
-  width: 100%;
   height: 145px;
   background-image: url(../image/header.png);
-  background-repeat: no-repeat;
-  background-color: white; }
+  background-position: left top;
+  background-repeat: no-repeat; }
   #header:after {
     position: absolute;
-    content: "";
-    top: 145px;
     width: 100%;
     height: 20px;
+    top: 145px;
+    content: "";
     background-image: url(../image/header_bottom.png);
-    background-repeat: repeat-x;
-    background-color: white; }
+    background-repeat: repeat-x; }
   #header #title {
+    display: block;
     padding: 50px;
     margin: 40px 0px 0px 20px;
+    text-decoration: none;
     font-family: "DFKai-SB", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
     font-weight: bold;
     font-size: 25px;
     color: #666666; }
 
 #main {
-  position: absolute;
-  top: 200px;
-  width: 100%;
-  min-height: 675px;
+  margin: 200px 0 20px 0;
+  min-height: 0;
   background-image: url(../image/logo.png);
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-color: white; }
+  background-position: left bottom; }
 
 #footer {
-  position: absolute;
-  top: 840px;
-  width: 100%;
   height: 30px;
   padding: 20px 0 20px 0;
   background-color: #555555; }
@@ -74,9 +60,10 @@ body, #header, #main, #footer {
     text-align: right; }
 
 .container {
+  position: relative;
   width: 1024px;
-  margin: 0 auto;
-  min-height: 0px; }
+  min-height: 0;
+  margin: 0 auto; }
   .container:before, .container:after {
     display: table;
     content: " "; }
@@ -84,7 +71,7 @@ body, #header, #main, #footer {
     clear: both; }
 
 div#content {
-  height: 560px;
+  min-height: 560px;
   padding: 20px;
   background-color: #eeeeee;
   border: 1px solid white;
