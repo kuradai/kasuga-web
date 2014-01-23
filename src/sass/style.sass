@@ -36,7 +36,7 @@ html, body, div
   padding: 0
 
 body
-  font-family: "メイリオ" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro"
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Osaka"
   font-size: 13px
   background-color: #ffffff
   text-align: left
@@ -69,7 +69,6 @@ body, #header, #main, #footer
     padding: 50px
     margin: 40px 0px 0px 20px
     text-decoration: none
-    font-family: "DFKai-SB" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro"
     font-weight: bold
     font-size: 25px
     color: #666666
@@ -84,7 +83,7 @@ body, #header, #main, #footer
 #footer
   height: 30px
   padding: 20px 0 20px 0
-  background-color: #555555
+  background-color: #232323
   p
     margin: 0
     padding: 0
@@ -167,11 +166,21 @@ div#content
         display: list-item
         margin: 0
         padding: 0
+  .schedule table
+    width: 100%
+    tr
+      min-height: 64px
+      background-color: #ededed
+      &:nth-child(odd)
+        background-color: #dedede
+    th
+      width: 64px
+      padding: 0 10px 0 0
+      font-size: 18px
+      text-align: right
+    td
+      padding: 0 5px 0 5px
 
-
-
-
-    
 #menu ul
   list-style: none
   font-size: 14px
