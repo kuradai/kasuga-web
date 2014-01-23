@@ -107,9 +107,7 @@ div#content
   padding: 20px
   background-color: #eeeeee
   border: 1px solid #ffffff
-  border-radius: 5px
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
+  @include border-radius(5px)    
   .title
     background-color: #fff8ff
     display: block
@@ -117,9 +115,7 @@ div#content
     border-width: 0px 0px 1px 10px
     border-color: #ffaec9
     border-style: solid
-    border-radius: 3px
-    -webkit-border-radius: 3px
-    -moz-border-radius: 3px
+    @include border-radius(3px)
     font-size: 16px
     color: #444444
     margin-bottom: 10px
@@ -139,9 +135,7 @@ div#content
     line-height: 1.8em
     padding: 16px
     background-color: #fff8ff
-    border-radius: 5px
-    -webkit-border-radius: 5px
-    -moz-border-radius: 5px
+    @include border-radius(px)
     p
       margin: 0 0 16px 0
       padding: 0
@@ -162,9 +156,7 @@ div#content
     color: #777777
     background: #eeeeee
     border: 0
-    border-radius: 0 5px 5px 0
-    -webkit-border-radius: 0 5px 5px 0
-    -moz-border-radius: 0 5px 5px 0
+    @include border-right-radius(3px)
     text-decoration: none
     &:before
       position: absolute
@@ -178,9 +170,7 @@ div#content
       font-size: 8px
       text-align: center
       vertical-align: center
-      border-radius: 5px 0 0 5px
-      -webkit-border-radius: 5px 0 0 5px
-      -moz-border-radius: 5px 0 0 5px 
+      @include border-left-radius(3px)
       color: #7453a1
     &:hover
       // color: #555555
