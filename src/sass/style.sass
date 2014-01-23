@@ -119,16 +119,22 @@ div#content
     font-size: 16px
     color: #444444
     margin-bottom: 10px
-  .subtitle
+  h2
     background-color: #fff8ff
     display: block
     padding: 10px
     border-width: 0px 0px 1px 0px
     border-color: #ffaec9
     border-style: solid
-    font-size: 12px
+    font-size: 18px
     color: #444444
     margin-bottom: 10px
+  h3
+    display: block
+    padding: 0
+    margin: 0
+    font-style: none
+    font-size: 14px
   .article
     color: #444444
     display: block
@@ -140,6 +146,30 @@ div#content
       margin: 0 0 16px 0
       padding: 0
       text-indent: 1em
+      &.author
+        margin: 0
+        text-indent: 0
+        text-align: right
+        color: #cacaca
+        font-size: 12px
+        a
+          color: #2f96c6
+      &.noindent
+        text-indent: 0
+      &.nomargin
+        margin: 0
+    ul
+      margin: 16px 0 16px 0
+      &.decimal
+        list-style-type: decimal
+      li 
+        display: list-item
+        margin: 0
+        padding: 0
+
+
+
+
     
 #menu ul
   list-style: none

@@ -91,16 +91,22 @@ div#content {
     font-size: 16px;
     color: #444444;
     margin-bottom: 10px; }
-  div#content .subtitle {
+  div#content h2 {
     background-color: #fff8ff;
     display: block;
     padding: 10px;
     border-width: 0px 0px 1px 0px;
     border-color: #ffaec9;
     border-style: solid;
-    font-size: 12px;
+    font-size: 18px;
     color: #444444;
     margin-bottom: 10px; }
+  div#content h3 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-style: none;
+    font-size: 14px; }
   div#content .article {
     color: #444444;
     display: block;
@@ -114,6 +120,26 @@ div#content {
       margin: 0 0 16px 0;
       padding: 0;
       text-indent: 1em; }
+      div#content .article p.author {
+        margin: 0;
+        text-indent: 0;
+        text-align: right;
+        color: #cacaca;
+        font-size: 12px; }
+        div#content .article p.author a {
+          color: #2f96c6; }
+      div#content .article p.noindent {
+        text-indent: 0; }
+      div#content .article p.nomargin {
+        margin: 0; }
+    div#content .article ul {
+      margin: 16px 0 16px 0; }
+      div#content .article ul.decimal {
+        list-style-type: decimal; }
+      div#content .article ul li {
+        display: list-item;
+        margin: 0;
+        padding: 0; }
 
 #menu ul {
   list-style: none;
