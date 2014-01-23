@@ -78,9 +78,10 @@ div#content {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box; }
-  div#content .title {
+  div#content h1 {
     background-color: #fff8ff;
     display: block;
+    margin: 0;
     padding: 10px;
     border-width: 0px 0px 1px 10px;
     border-color: #ffaec9;
@@ -88,7 +89,7 @@ div#content {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-clip: padding-box;
-    font-size: 16px;
+    font-size: 22px;
     color: #444444;
     margin-bottom: 10px; }
   div#content h2 {
