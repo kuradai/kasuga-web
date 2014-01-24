@@ -5,6 +5,9 @@ html, body, div {
 
 body {
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Osaka";
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   font-size: 13px;
   background-color: white;
   text-align: left;
@@ -71,16 +74,17 @@ body, #header, #main, #footer {
 
 div#content {
   min-height: 560px;
-  padding: 20px;
+  padding: 0px;
   background-color: #eeeeee;
-  border: 1px solid white;
+  border: 0px solid white;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box; }
+  div#content h1, div#content .article {
+    margin: 20px; }
   div#content h1 {
     background-color: #fff8ff;
     display: block;
-    margin: 0;
     padding: 10px;
     border-width: 0px 0px 1px 10px;
     border-color: #ffaec9;
@@ -156,6 +160,7 @@ div#content {
       padding: 0 5px 0 5px; }
 
 #menu ul {
+  width: 100%;
   list-style: none;
   font-size: 14px;
   margin: 0;
