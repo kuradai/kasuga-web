@@ -37,6 +37,7 @@ body, #header, #main, #footer {
     background-repeat: repeat-x; }
   #header #title {
     display: block;
+    width: 512px;
     padding: 50px;
     margin: 40px 0px 0px 20px;
     text-decoration: none;
