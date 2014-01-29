@@ -38,12 +38,15 @@ body, #header, #main, #footer {
   #header #title {
     display: block;
     width: 512px;
-    padding: 50px;
-    margin: 40px 0px 0px 20px;
+    padding: 10px;
+    margin: 80px 40px 40px 60px;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
     color: #666666; }
+    #header #title:hover {
+      text-decoration: underline;
+      color: #2f96c6; }
 
 #main {
   margin: 200px 0 20px 0;
@@ -121,6 +124,8 @@ div#content {
     -webkit-border-radius: px;
     border-radius: px;
     background-clip: padding-box; }
+    div#content .article a {
+      color: #2f96c6; }
     div#content .article p {
       margin: 0 0 16px 0;
       padding: 0;
@@ -133,8 +138,6 @@ div#content {
         text-align: right;
         color: #898989;
         font-size: 12px; }
-        div#content .article p.author a {
-          color: #2f96c6; }
       div#content .article p.noindent {
         text-indent: 0; }
       div#content .article p.nomargin {
