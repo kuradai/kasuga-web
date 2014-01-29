@@ -124,12 +124,14 @@ div#content {
     div#content .article p {
       margin: 0 0 16px 0;
       padding: 0;
-      text-indent: 1em; }
+      text-indent: 1em;
+      font-size: 14px;
+      line-height: 1.7em; }
       div#content .article p.author {
         margin: 0;
         text-indent: 0;
         text-align: right;
-        color: #cacaca;
+        color: #898989;
         font-size: 12px; }
         div#content .article p.author a {
           color: #2f96c6; }

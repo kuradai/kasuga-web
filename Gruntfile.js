@@ -48,7 +48,8 @@ module.exports = function(grunt) {
           "dst/schedule.html": ["src/haml/schedule.haml"],
           "dst/opinions.html": ["src/haml/opinions.haml"],
           "dst/pal.html": ["src/haml/pal.haml"],
-          "dst/contact.html": ["src/haml/contact.haml"]
+          "dst/contact.html": ["src/haml/contact.haml"],
+          "dst/sitemap.html": ["src/haml/sitemap.haml"]
         }
       }
     },
