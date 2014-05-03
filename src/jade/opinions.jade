@@ -3,8 +3,11 @@ extends layout/default
 block title 
   title 目安箱|筑波大学 春日地区クラス代表者会議
 
+block assets
+  script(src = "js/opinions.js")
+
 block contents
   #content.col-9
     h1 目安箱
     .article
-      p Coming soon...
+      #opinions

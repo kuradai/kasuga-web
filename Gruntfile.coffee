@@ -82,7 +82,8 @@ module.exports = (grunt) ->
         options:
           join: true
         files:
-          "dst/js/app.js": ["src/js/*.coffee"]
+          "dst/js/app.js": ["src/js/app.coffee"]
+          "dst/js/opinions.js": ["src/js/opinions.coffee"]
 
     sass:
       compile:
