@@ -102,6 +102,12 @@ module.exports = (grunt) ->
             dest: "dst/image"
             flatten: true
           }
+          {
+            expand: true
+            src: ["src/image/opinions/*.*"]
+            dest: "dst/image/opinions"
+            flatten: true
+          }
         ]
 
     clean:
