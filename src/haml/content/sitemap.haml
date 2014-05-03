@@ -1,9 +1,0 @@
-#content.col-9
-  %h1
-    サイトマップ
-  .article
-    / - {index: "トップ", aboutus: "クラ代について", activities: "局紹介", kurarennkai: "クラス連絡会について", schedule: "年間スケジュール", opinions: "目安箱", pal: "PAL", contact: "お問い合わせ", sitemap: "サイトマップ"}.each do |key, val|
-    - {index: "トップ", aboutus: "クラ代について", activities: "局紹介", kurarennkai: "クラス連絡会について", schedule: "年間スケジュール", contact: "お問い合わせ", sitemap: "サイトマップ"}.each do |key, val|
-      %li
-        %a{:href => "#{key}.html"} #{val}
-  

@@ -1,0 +1,31 @@
+doctype
+html
+  head
+    block title
+    meta(charset = "UTF-8")
+    meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
+    meta(property = "keywords", content = "筑波大学, 春日エリア, 春日地区, 情報学群, 知識情報・図書館学類, 情報メディア創成学類, クラス代表者会議, 春日食堂, 総務局, 生活局, 知識教育局")
+    meta(property = "og:title", content = "春日地区クラス代表者会議")
+    meta(:property = "og:type", content = "website")
+    meta(property = "og:description", content = "ここは筑波大学春日地区クラス代表者会議、通称「春日クラ代」のWebサイトです。 それぞれ活動内容の異なる「生活局」、「知識教育局」、「総務局」という3つの部局から成るクラス代表者会議に関する情報を掲載しています。")
+    meta(property = "og:url", content = "http://www.stb.tsukuba.ac.jp/~kasuga-campus/")
+    meta(property = "og:image", content = "mage/apple-touch-icon.png")
+    meta(property = "og:site_name", content = "春日地区クラス代表者会議")
+    meta(property = "og:author", :content = "春日地区クラス代表者会議")
+    link(rel = "shortcut icon", href = "image/favicon.ico")
+    link(rel = "apple-touch-icon", href = "image/apple-touch-icon.png")
+    script(src = "javascript/jquery-2.0.3.js")
+    script(src = "javascript/app.js")
+    link(rel = "stylesheet", type = "text/css", href = "style/style.css")
+    block assets
+
+  body
+    include ../template/header
+    
+    #main
+      .container
+        #menu.col-3
+            include ../template/menu
+        block contents
+
+    include ../template/footer

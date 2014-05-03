@@ -1,0 +1,36 @@
+{
+  "name": "kasuga-web",
+  "version": "0.0.1",
+  "authors": [
+    "Makky"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.0",
+    "font-awesome": "~4.0.3"
+  },
+ "exportsOverride": {
+    "bootstrap": {
+        "js": "dist/js/bootstrap.min.js",
+        "css": "dist/css/bootstrap.min.css",
+        "fonts": "dist/fonts/*"
+    },
+    "jquery": {
+      "js": "dist/jquery.min.js"
+    },
+    "font-awesome": {
+      "css": "css/font-awesome.min.css",
+      "fonts": "fonts/*"
+    }
+  }
+}
