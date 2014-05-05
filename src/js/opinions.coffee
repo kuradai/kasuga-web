@@ -1,20 +1,34 @@
-opinions = () ->
-  console.log "hey opinion!!"
+opinions = (page = 0) ->
   url = "http://localhost:8888/opinions.php"
+  if page
+    url += "?page=" + page
 
   $.ajax(
     type: 'GET'
     url: url
     dataType: 'json'
-    success: (json) ->
+    success: (data) ->
+      json =  JSON.parse data
       console.log json
-      for val, key in json
+      $(".opinions").empty()
+      for val, key in json.item
         console.log key
         console.log val
         _label = $("<span>", {class: "opinion-label", text: val.label})
         _img = $("<img>", {src: "image/opinions/" +val.file_name})
-        _dom = $('<div>', {class: "opinion-item col-4"}).append(_label, _img)
-        $('#opinions').prepend(_dom)
+        _box = $('<div>', {class: "opinion-item"}).append(_label, _img)
+        _dom = $('<div>', {class: "opinion-box col-4"}).append(_box)
+        $('.opinions').append(_dom)
+      $(".opinion-menus").empty()
+      for i in [0..json.info.count/16]
+        _dom = $('<div>', {class: "opinion-menu", text: i, "data-page": i}).click( () ->
+          opinions($(this).data("page"))
+        )
+        $('.opinion-menus').append(_dom)
+    error: (e) ->
+      _dom = $('<div>', {class: "opinion-error col-12", text: "データの取得に失敗しました"})
+      $('.opinions').prepend(_dom)
   )
 
-$ -> opinions()
+$ ->
+  opinions()
