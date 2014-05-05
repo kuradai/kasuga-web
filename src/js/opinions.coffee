@@ -1,5 +1,5 @@
 opinions = (page = 0) ->
-  url = "http://localhost:8888/opinions.php"
+  url = "http://www.stb.tsukuba.ac.jp/~kasuga-campus/v1/opinions.php"
   if page
     url += "?page=" + page
 
@@ -15,7 +15,7 @@ opinions = (page = 0) ->
         console.log key
         console.log val
         _label = $("<span>", {class: "opinion-label", text: val.label})
-        _img = $("<img>", {src: "image/opinions/" +val.file_name})
+        _img = $("<img>", {src: "http://www.stb.tsukuba.ac.jp/~kasuga-campus/v1/opinions/image/" +val.file_name})
         _box = $('<div>', {class: "opinion-item"}).append(_label, _img)
         _dom = $('<div>', {class: "opinion-box col-4"}).append(_box)
         $('.opinions').append(_dom)
